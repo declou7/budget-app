@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Decamps Budgeting App</title>
+<meta name="description" content="A private household budgeting app for one family. It reads our own bank balances and transactions through Plaid.">
+<style>
+:root{--bg:#f4f6f8;--surface:#fff;--fg:#14202b;--muted:#566574;--line:#dce2e8;--accent:#2352d8}
+@media (prefers-color-scheme:dark){:root{--bg:#0f161d;--surface:#17212b;--fg:#e7edf3;--muted:#93a2b0;--line:#273543;--accent:#7aa0ff;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:24px 16px 64px}
+main{max-width:680px;margin:0 auto}
+header{padding:32px 0 8px}
+h1{font-size:34px;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:21px;margin:36px 0 8px}
+p,li{color:var(--fg)}
+.lede{color:var(--muted);font-size:19px;margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 20px 20px;margin-top:20px}
+a{color:var(--accent)}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+footer{margin-top:40px;color:var(--muted);font-size:14px}
+ul{padding-left:22px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Decamps Budgeting App</h1>
+    <p class="lede">A private budgeting app for one household. It helps two people see their spending, bills and debt payoff in one place.</p>
+    <nav><a href="privacy.html">Privacy and data security</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <div class="card">
+    <h2>What it is</h2>
+    <p>This is a personal tool built and used by one family: Luis Decamps and his spouse. It is not offered to the public, there are no other users, and nothing is for sale. There is no sign-up page.</p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Shows the balances of our own bank accounts and credit cards in one view.</li>
+      <li>Sorts our own transactions into categories such as groceries, housing and transport.</li>
+      <li>Tracks monthly bills on a calendar.</li>
+      <li>Plans how we pay off our own debts, month by month.</li>
+    </ul>
+
+    <h2>How it connects to our banks</h2>
+    <p>We connect our own accounts through <a href="https://plaid.com/legal/">Plaid</a>. We sign in on our bank's own screen inside Plaid's connection window, so the app never sees our bank passwords. The app receives only the permission to read balances and transactions for the accounts we choose, and we can disconnect a bank at any time.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Questions about this app or how it handles data: <a href="mailto:lddecamps@live.com">lddecamps@live.com</a></p>
+  </div>
+
+  <footer>Decamps Budgeting App. A personal project, not a company or a financial institution. Last updated October 12, 2026.</footer>
+</main>
+</body>
+</html>
