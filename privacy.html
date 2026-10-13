@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy and Data Security | Decamps Budgeting App</title>
+<meta name="description" content="What the Decamps Budgeting App reads, where the data is kept, and how it is protected.">
+<style>
+:root{--bg:#f4f6f8;--surface:#fff;--fg:#14202b;--muted:#566574;--line:#dce2e8;--accent:#2352d8}
+@media (prefers-color-scheme:dark){:root{--bg:#0f161d;--surface:#17212b;--fg:#e7edf3;--muted:#93a2b0;--line:#273543;--accent:#7aa0ff;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:24px 16px 64px}
+main{max-width:680px;margin:0 auto}
+header{padding:32px 0 8px}
+h1{font-size:32px;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:21px;margin:32px 0 8px}
+.lede{color:var(--muted);font-size:18px;margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 20px 20px;margin-top:20px}
+a{color:var(--accent)}
+ul{padding-left:22px}
+li{margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p><a href="index.html">&larr; Decamps Budgeting App</a></p>
+    <h1>Privacy and data security</h1>
+    <p class="lede">Last updated October 12, 2026</p>
+  </header>
+
+  <div class="card">
+    <h2>Who this covers</h2>
+    <p>This policy covers a private budgeting app used only by Luis Decamps and his spouse to manage their own household finances. The app has no other users and is not offered to anyone else.</p>
+
+    <h2>What data the app reads</h2>
+    <ul>
+      <li>Balances and transactions of the bank accounts and credit cards we choose to connect, received through Plaid.</li>
+      <li>Details we type in ourselves, such as bills, budgets, savings goals, and the debts and interest rates we want to track.</li>
+    </ul>
+    <p>The app never receives our bank usernames or passwords. We sign in on our bank's own screen inside Plaid's connection window.</p>
+
+    <h2>How the data is used</h2>
+    <p>Only to show the two of us our own spending, bills, balances and debt payoff plan. It is not used for advertising, profiling or any other purpose.</p>
+
+    <h2>Who it is shared with</h2>
+    <p>Nobody. We do not sell, rent or share this data. The only outside services involved are:</p>
+    <ul>
+      <li><a href="https://plaid.com/legal/">Plaid</a>, which securely connects the app to our banks under <a href="https://plaid.com/legal/">its own privacy policy</a>.</li>
+      <li>Tailscale, which provides the encrypted private network we use to reach the app from our phones.</li>
+      <li>Google Fonts, which supplies the typefaces the app's pages display.</li>
+    </ul>
+
+    <h2>Where it is kept and how it is protected</h2>
+    <ul>
+      <li>The data is stored in a database on a computer in our home. It is not kept on a public server.</li>
+      <li>The credentials that let the app read our bank data (access tokens) are encrypted before they are stored.</li>
+      <li>The app can only be opened by the two of us. It requires a personal sign-in, and passwords are stored only as salted hashes.</li>
+      <li>The app is reached only over an encrypted (HTTPS) connection on a private network. It is not open to the public internet.</li>
+      <li>Each of us can see the household view, but can change only our own accounts and entries.</li>
+    </ul>
+
+    <h2>How long it is kept, and deleting it</h2>
+    <p>Data stays in the app while we use it. If we disconnect a bank, the app removes that bank's accounts and transactions. We can also ask Plaid to remove a connection at any time, and we can delete the app's database at any time.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:lddecamps@live.com">lddecamps@live.com</a></p>
+  </div>
+
+  <footer>We will update this page if how the app handles data changes.</footer>
+</main>
+</body>
+</html>
